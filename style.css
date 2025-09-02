@@ -1,0 +1,289 @@
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #2c3e50;
+  background: #f9f9f9;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+h2 {
+  margin-bottom: 1rem;
+  color: #34495e;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+  background: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+.nav-links li {
+  margin-left: 1.5rem;
+}
+.nav-links a {
+  font-weight: 600;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 5rem 0;
+  background: linear-gradient(120deg, #3498db, #8e44ad);
+  color: white;
+}
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero .intro {
+  max-width: 500px;
+}
+.hero .intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero .intro span {
+  color: #ffd700;
+}
+.hero img {
+  max-width: 250px;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+.cta-btn, .resume-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.cta-btn {
+  background: #ffd700;
+  color: #333;
+}
+.resume-btn {
+  background: white;
+  color: #3498db;
+  border: 2px solid white;
+}
+
+/* Sections */
+section {
+  padding: 3rem 0;
+}
+.experience ul {
+  list-style: none;
+  padding: 0;
+}
+.experience li {
+  margin-bottom: 0.75rem;
+}
+
+/* Projects */
+.projects .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.project-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+.project-card h3 {
+  margin-top: 0;
+}
+.project-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #fff;
+  margin-top: 2rem;
+}
+
+/* Timeline (Education) */
+.timeline {
+  position: relative;
+  margin: 2rem 0;
+  padding-left: 20px;
+  border-left: 3px solid #3498db;
+}
+.timeline-item {
+  margin-bottom: 2rem;
+}
+.timeline-content {
+  padding: 0.5rem 1rem;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Experience cards */
+.exp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.exp-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.exp-card h3 {
+  margin-top: 0;
+}
+
+/* Resume Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 200;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+}
+.close {
+  position: absolute;
+  right: 10px; top: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+/* Contact in header */
+.contact-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contact-header a {
+  font-size: 18px;
+}
+
+/* Experience vertical */
+.exp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.exp-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Skills */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+.skill-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.skill-card h3 {
+  margin-top: 0;
+}
+
+/* Tile content justified */
+.exp-card{
+  text-align: justify;
+}
+
+/* Timeline right-aligned dates */
+.timeline-content {
+  position: relative;
+}
+.timeline-date {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #888;
+}
+
+/* Experience cards */
+.exp-card {
+  position: relative;
+}
+.exp-card .timeline-date {
+  top: 8px;
+  right: 12px;
+}
+
+/* Contact icons */
+.contact-icons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 15px;
+}
+.contact-icons a {
+  display: inline-flex;
+}
+/* Lists inside tiles */
+.exp-card ul,
+.project-card ul {
+  margin: 0.5rem 0 0 1rem;
+  padding: 0;
+  list-style-type: disc;
+}
+
+.exp-card li,
+.project-card li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
